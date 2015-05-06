@@ -1,8 +1,8 @@
 Package.describe({
-  summary: "Fork of afruth:chapp - A very basic chat package with minimum config necessary to get running - Adds more stylability to chat messages, and allows for cusomizable history logs",
+  summary: "Fork of afruth:chapp - A very basic chat package with minimum config necessary to get running",
   version: "0.1.7",
-  name: "afruth:chapp",
-  git: "https://github.com/afruth/chapp"
+  name: "ryanswrt:chapp",
+  git: "https://github.com/TheAncientGoat/chapp"
 });
 
 Package.onUse(function(api) {
@@ -10,7 +10,7 @@ Package.onUse(function(api) {
       'session',
       'templating',
       'ui',
-      'mrt:moment@2.8.1'
+      'momentjs:moment'
   ])
   api.versionsFrom('METEOR@0.9.0');
   api.addFiles('./lib/client/chapp.html','client');
@@ -22,6 +22,6 @@ Package.onUse(function(api) {
 
 Package.onTest(function(api) {
   api.use('tinytest');
-  api.use('afruth:chapp');
+  api.use('ryanswrt:chapp');
   api.addFiles('afruth:chapp-tests.js');
 });

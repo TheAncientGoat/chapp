@@ -1,4 +1,11 @@
-#Chapp package: easy plugin chat for meteor
+Chapp package: easy plugin chat for meteor
+==========================================
+
+Forked from aruth, adding optional chat backlog and more customizable message format.
+Will remove this package if my changes get merged
+
+Usage
+=====
 
 In order to use it you need to set two Session variables:
 
@@ -9,6 +16,10 @@ In order to use it you need to set two Session variables:
 The variables are reactive, you can change them at any time.
 
 Then, in your template all the chat template: `{{>chapp_form}}`
+
+
+Styling
+=======
 
 These are the chat templates, you can style the look and feel in your css:
 
